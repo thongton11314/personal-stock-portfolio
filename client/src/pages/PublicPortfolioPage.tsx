@@ -73,6 +73,7 @@ export default function PublicPortfolioPage() {
         <section className="public-section" aria-labelledby="overview-heading">
           <div className="public-container">
             <h2 id="overview-heading">Portfolio Overview</h2>
+            <p className="portfolio-notice">This portfolio tracks individual stock positions held in a public brokerage account only. Index funds, ETFs (except single-asset ETFs), and other diversified holdings are excluded. This represents a high-conviction, concentrated segment of the overall investment strategy — not the total portfolio.</p>
             <div className="public-metrics">
               <div className="public-metric" title="Total Return = (Current Market Value − Total Cost Basis) ÷ Total Cost Basis. Cost basis is the total amount invested (quantity × average purchase price per share). This is a simple return that shows how much the portfolio has gained or lost relative to the money invested.">
                 <div className="metric-label">Total Return</div>
