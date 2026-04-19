@@ -46,11 +46,23 @@ export async function unpublishPortfolio() {
 }
 
 export async function getPublicPortfolio() {
+  if (import.meta.env.VITE_STATIC_MODE === 'true') {
+    const base = import.meta.env.BASE_URL || '/';
+    const response = await fetch(`${base}data/portfolio.json`);
+    if (!response.ok) throw new Error('Not found');
+    return response.json();
+  }
   const response = await apiClient.get('/public/portfolio');
   return response.data;
 }
 
 export async function getPublicPerformance(params?: Record<string, string>) {
+  if (import.meta.env.VITE_STATIC_MODE === 'true') {
+    const base = import.meta.env.BASE_URL || '/';
+    const response = await fetch(`${base}data/performance.json`);
+    if (!response.ok) throw new Error('Not found');
+    return response.json();
+  }
   const response = await apiClient.get('/public/performance', { params });
   return response.data;
 }
