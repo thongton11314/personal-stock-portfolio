@@ -1,0 +1,11 @@
+{
+  "ticker": "NBIS",
+  "type": "buy",
+  "quantity": 26,
+  "price": 94.87,
+  "date": "2025-11-28",
+  "totalCost": 2466.62,
+  "notes": "",
+  "id": "nbis-buy-1776220451840",
+  "createdAt": "2026-04-15T02:34:11.840Z"
+}

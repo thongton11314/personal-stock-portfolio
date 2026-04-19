@@ -1,0 +1,11 @@
+{
+  "ticker": "IBIT",
+  "type": "buy",
+  "quantity": 250,
+  "price": 33.52,
+  "date": "2024-08-28",
+  "totalCost": 8380,
+  "notes": "",
+  "id": "ibit-buy-1776222112913",
+  "createdAt": "2026-04-15T03:01:52.913Z"
+}

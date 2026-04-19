@@ -1,0 +1,11 @@
+{
+  "ticker": "HOOD",
+  "type": "buy",
+  "quantity": 150,
+  "price": 9.98,
+  "date": "2023-07-02",
+  "totalCost": 1497,
+  "notes": "",
+  "id": "hood-buy-1776223251304",
+  "createdAt": "2026-04-15T03:20:51.304Z"
+}

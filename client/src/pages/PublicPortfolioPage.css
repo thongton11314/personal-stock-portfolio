@@ -1,0 +1,146 @@
+.public-page {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.public-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.public-hero {
+  background: var(--color-bg-secondary);
+  padding: var(--space-2xl) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.public-hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.public-subtitle {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.hero-metrics {
+  display: flex;
+  gap: var(--space-xl);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.public-updated {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.public-section {
+  padding: var(--space-xl) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.public-section:last-child {
+  border-bottom: none;
+}
+
+.public-section h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.public-section .card + .card {
+  margin-top: var(--space-xl);
+}
+
+.public-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.public-metric {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  cursor: help;
+}
+
+.sector-bars {
+  margin-top: var(--space-md);
+}
+
+.sector-bar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.sector-label {
+  width: 200px;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.sector-bar-track {
+  flex: 1;
+  height: 20px;
+  background: var(--color-bg-tertiary);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sector-bar-fill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+.sector-weight {
+  width: 50px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.methodology h3 {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.methodology h3:first-child {
+  margin-top: 0;
+}
+
+.methodology p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  .public-container {
+    padding: 0 var(--space-md);
+  }
+  .public-hero {
+    padding: var(--space-xl) 0;
+  }
+  .hero-metrics {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  .public-metrics {
+    grid-template-columns: 1fr;
+  }
+  .sector-label {
+    width: 120px;
+  }
+}

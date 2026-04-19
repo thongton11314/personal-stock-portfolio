@@ -1,0 +1,11 @@
+{
+  "ticker": "PATH",
+  "type": "buy",
+  "quantity": 500,
+  "price": 16.32,
+  "date": "2026-01-09",
+  "totalCost": 8160,
+  "notes": "",
+  "id": "path-buy-1776273453729",
+  "createdAt": "2026-04-15T17:17:33.729Z"
+}

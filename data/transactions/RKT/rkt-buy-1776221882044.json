@@ -1,0 +1,11 @@
+{
+  "ticker": "RKT",
+  "type": "buy",
+  "quantity": 1300,
+  "price": 12.3,
+  "date": "2024-04-10",
+  "totalCost": 15990,
+  "notes": "",
+  "id": "rkt-buy-1776221882044",
+  "createdAt": "2026-04-15T02:58:02.044Z"
+}

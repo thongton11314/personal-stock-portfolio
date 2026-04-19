@@ -1,0 +1,16 @@
+{
+  "id": "path-1776273453733",
+  "ticker": "PATH",
+  "companyName": "Uipath Inc",
+  "assetType": "Stock",
+  "quantity": 500,
+  "averageCost": 16.32,
+  "purchaseDate": "2026-01-09",
+  "sector": "Technology",
+  "notes": "",
+  "isPublic": true,
+  "displayOrder": 0,
+  "status": "active",
+  "createdAt": "2026-04-15T17:17:33.727Z",
+  "updatedAt": "2026-04-15T17:17:33.727Z"
+}

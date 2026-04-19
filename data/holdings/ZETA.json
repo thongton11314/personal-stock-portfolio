@@ -1,0 +1,16 @@
+{
+  "id": "zeta-1776220383054",
+  "ticker": "ZETA",
+  "companyName": "Zeta Global Holdings Corp",
+  "assetType": "Stock",
+  "quantity": 400,
+  "averageCost": 21.67,
+  "purchaseDate": "2026-01-05",
+  "sector": "Technology",
+  "notes": "",
+  "isPublic": true,
+  "displayOrder": 0,
+  "status": "active",
+  "createdAt": "2026-04-15T02:33:03.047Z",
+  "updatedAt": "2026-04-15T02:33:03.047Z"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio management platform with admin portal and public page",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "npm run build:shared && npm run build:server && npm run build:client",
+    "build:shared": "cd shared && npm run build",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "cd server && npm test",
+    "lint": "cd server && npm run lint && cd ../client && npm run lint",
+    "typecheck": "cd shared && npm run typecheck && cd ../server && npm run typecheck && cd ../client && npm run typecheck",
+    "setup:data": "node scripts/setup-data.js",
+    "install:all": "npm install && cd shared && npm install && cd ../server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "ticker": "CRCL",
+  "type": "buy",
+  "quantity": 105,
+  "price": 55.05,
+  "date": "2026-02-04",
+  "totalCost": 5780.25,
+  "notes": "",
+  "id": "crcl-buy-1776223454393",
+  "createdAt": "2026-04-15T03:24:14.393Z"
+}

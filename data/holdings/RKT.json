@@ -1,0 +1,16 @@
+{
+  "id": "rkt-1776221882050",
+  "ticker": "RKT",
+  "companyName": "Rocket Companies Inc",
+  "assetType": "Stock",
+  "quantity": 1300,
+  "averageCost": 7.56,
+  "purchaseDate": "2024-04-10",
+  "sector": "Finance",
+  "notes": "",
+  "isPublic": true,
+  "displayOrder": 0,
+  "status": "active",
+  "createdAt": "2026-04-15T02:58:02.023Z",
+  "updatedAt": "2026-04-15T02:59:19.240Z"
+}

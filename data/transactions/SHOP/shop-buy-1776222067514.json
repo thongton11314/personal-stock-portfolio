@@ -1,0 +1,11 @@
+{
+  "ticker": "SHOP",
+  "type": "buy",
+  "quantity": 100,
+  "price": 63.01,
+  "date": "2024-06-10",
+  "totalCost": 6301,
+  "notes": "",
+  "id": "shop-buy-1776222067514",
+  "createdAt": "2026-04-15T03:01:07.514Z"
+}

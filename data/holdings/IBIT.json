@@ -1,0 +1,16 @@
+{
+  "id": "ibit-1776222112917",
+  "ticker": "IBIT",
+  "companyName": "Black Rock",
+  "assetType": "Stock",
+  "quantity": 350,
+  "averageCost": 33.52,
+  "purchaseDate": "2024-08-28",
+  "sector": "Technology",
+  "notes": "",
+  "isPublic": true,
+  "displayOrder": 0,
+  "status": "active",
+  "createdAt": "2026-04-15T03:01:52.911Z",
+  "updatedAt": "2026-04-15T03:25:11.155Z"
+}

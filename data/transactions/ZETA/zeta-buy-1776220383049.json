@@ -1,0 +1,11 @@
+{
+  "ticker": "ZETA",
+  "type": "buy",
+  "quantity": 400,
+  "price": 21.67,
+  "date": "2026-01-05",
+  "totalCost": 8668,
+  "notes": "",
+  "id": "zeta-buy-1776220383049",
+  "createdAt": "2026-04-15T02:33:03.049Z"
+}

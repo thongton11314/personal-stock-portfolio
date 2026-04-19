@@ -1,0 +1,16 @@
+{
+  "id": "shop-1776222067518",
+  "ticker": "SHOP",
+  "companyName": "Shopify Inc",
+  "assetType": "Stock",
+  "quantity": 100,
+  "averageCost": 63.01,
+  "purchaseDate": "2024-06-10",
+  "sector": "Technology",
+  "notes": "",
+  "isPublic": true,
+  "displayOrder": 0,
+  "status": "active",
+  "createdAt": "2026-04-15T03:01:07.513Z",
+  "updatedAt": "2026-04-15T03:01:07.513Z"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "nbis-1776220451843",
+  "ticker": "NBIS",
+  "companyName": "NBIS",
+  "assetType": "Stock",
+  "quantity": 76,
+  "averageCost": 95.91,
+  "purchaseDate": "2025-11-28",
+  "sector": "Technology",
+  "notes": "",
+  "isPublic": true,
+  "displayOrder": 0,
+  "status": "active",
+  "createdAt": "2026-04-15T02:34:11.839Z",
+  "updatedAt": "2026-04-15T02:35:26.946Z"
+}

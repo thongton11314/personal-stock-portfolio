@@ -1,0 +1,23 @@
+{
+  "portfolio": {
+    "title": "Thong Ton Portfolio",
+    "subtitle": "Personal Investment Portfolio",
+    "description": "A long-term growth-oriented investment portfolio. This portfolio is only single stock, exclude index funds",
+    "disclaimer": "This portfolio page is for informational purposes only. It does not constitute investment advice."
+  },
+  "benchmark": {
+    "symbol": "SPY",
+    "name": "S&P 500 (SPY)"
+  },
+  "publicPage": {
+    "seoTitle": "Ton Stock Portfolio",
+    "seoDescription": "View my investment portfolio performance and allocation.",
+    "slug": "portfolio",
+    "isPublished": true
+  },
+  "auth": {
+    "username": "admin",
+    "passwordHash": "$2b$10$SQegoZX9T8XfUCoaZoaTleh3ymfMC5QflZhhyD2me4sEFIRNztn8y"
+  },
+  "updatedAt": "2026-04-15T04:11:41.105Z"
+}
