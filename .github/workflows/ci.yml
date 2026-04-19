@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    env:
+      ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+      PORT: 3001
+      NODE_ENV: test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            shared/package-lock.json
+            server/package-lock.json
+            client/package-lock.json
+
+      - name: Install all dependencies
+        run: npm run install:all
+
+      - name: Build shared
+        run: npm run build:shared
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build server
+        run: npm run build:server
+
+      - name: Build client
+        run: npm run build:client
+
+      - name: Test
+        run: npm test
