@@ -125,6 +125,7 @@ export default function PublicPortfolioPage() {
         <section className="public-section" aria-labelledby="holdings-heading">
           <div className="public-container">
             <h2 id="holdings-heading">Holdings</h2>
+            <p className="portfolio-notice">The positions shown reflect current active holdings only. Previously sold positions and past sell transactions are not displayed.</p>
 
             {data.holdings.length > 0 && (() => {
               const PIE_COLORS = ['#2563eb', '#dc2626', '#16a34a', '#d97706', '#7c3aed', '#db2777', '#0891b2', '#65a30d', '#e11d48', '#0d9488'];
