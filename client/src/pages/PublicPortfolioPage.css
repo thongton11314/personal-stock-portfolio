@@ -80,7 +80,76 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--space-lg);
-  cursor: help;
+}
+
+.metric-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+/* Holdings: desktop table visible, mobile cards hidden */
+.holdings-table-desktop {
+  display: table;
+}
+
+.holdings-cards-mobile {
+  display: none;
+}
+
+/* Mobile holding cards */
+.holding-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  overflow: hidden;
+}
+
+.holding-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.holding-card-ticker {
+  font-size: 1rem;
+  margin-right: var(--space-sm);
+}
+
+.holding-card-company {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.holding-card-return {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.holding-card-body {
+  padding: var(--space-sm) var(--space-md);
+}
+
+.holding-card-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.875rem;
+}
+
+.holding-card-row:last-child {
+  border-bottom: none;
+}
+
+.holding-card-label {
+  color: var(--color-text-secondary);
+  font-weight: 500;
 }
 
 .sector-bars {
@@ -149,9 +218,15 @@
     gap: var(--space-sm);
   }
   .public-metrics {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .sector-label {
     width: 120px;
+  }
+  .holdings-table-desktop {
+    display: none;
+  }
+  .holdings-cards-mobile {
+    display: block;
   }
 }

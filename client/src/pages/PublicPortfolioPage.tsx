@@ -75,31 +75,36 @@ export default function PublicPortfolioPage() {
             <h2 id="overview-heading">Portfolio Overview</h2>
             <p className="portfolio-notice">This portfolio tracks individual stock positions held in a public brokerage account only. Index funds, ETFs (except single-asset ETFs), and other diversified holdings are excluded. This represents a high-conviction, concentrated segment of the overall investment strategy — not the total portfolio.</p>
             <div className="public-metrics">
-              <div className="public-metric" title="Total Return = (Current Market Value − Total Cost Basis) ÷ Total Cost Basis. Cost basis is the total amount invested (quantity × average purchase price per share). This is a simple return that shows how much the portfolio has gained or lost relative to the money invested.">
+              <div className="public-metric">
                 <div className="metric-label">Total Return</div>
                 <div className={`metric-value ${getValueClass(data.summary.totalReturn)}`}>{formatPercent(data.summary.totalReturn)}</div>
+                <div className="metric-desc">vs. cost basis</div>
               </div>
               {data.summary.returnYtd != null && (
-                <div className="public-metric" title="YTD Return uses the Time-Weighted Return (TWR) method since January 1st. TWR chains daily sub-period returns at each transaction date, neutralizing the effect of cash deposits. This measures pure investment performance regardless of when money was added or withdrawn.">
+                <div className="public-metric">
                   <div className="metric-label">YTD Return</div>
                   <div className={`metric-value ${getValueClass(data.summary.returnYtd)}`}>{formatPercent(data.summary.returnYtd)}</div>
+                  <div className="metric-desc">since Jan 1 (TWR)</div>
                 </div>
               )}
               {data.summary.return1yr != null && (
-                <div className="public-metric" title="1Y Return uses the Time-Weighted Return (TWR) method over the past 12 months. TWR splits the period into sub-periods at each buy/sell transaction, computes the return for each sub-period, then chains them: TWR = (1+r₁)(1+r₂)...(1+rₙ) − 1. This is the industry standard (GIPS-compliant) method used by fund managers.">
+                <div className="public-metric">
                   <div className="metric-label">1Y Return</div>
                   <div className={`metric-value ${getValueClass(data.summary.return1yr)}`}>{formatPercent(data.summary.return1yr)}</div>
+                  <div className="metric-desc">past 12 months (TWR)</div>
                 </div>
               )}
               {data.summary.return3yr != null && (
-                <div className="public-metric" title="3Y Return uses the Time-Weighted Return (TWR) method over the past 3 years (or since inception if the portfolio is younger). TWR neutralizes cash flows so the return reflects investment skill, not the timing or size of deposits.">
+                <div className="public-metric">
                   <div className="metric-label">3Y Return</div>
                   <div className={`metric-value ${getValueClass(data.summary.return3yr)}`}>{formatPercent(data.summary.return3yr)}</div>
+                  <div className="metric-desc">past 3 years (TWR)</div>
                 </div>
               )}
-              <div className="public-metric" title="Total number of active stock holdings in the portfolio.">
+              <div className="public-metric">
                 <div className="metric-label">Holdings</div>
                 <div className="metric-value">{data.summary.holdingsCount}</div>
+                <div className="metric-desc">active positions</div>
               </div>
             </div>
 
@@ -173,7 +178,8 @@ export default function PublicPortfolioPage() {
               });
 
               return (
-            <table className="data-table" aria-label="Portfolio holdings">
+            <>
+            <table className="data-table holdings-table-desktop" aria-label="Portfolio holdings">
               <caption className="sr-only">Portfolio holdings showing allocation and details</caption>
               <thead>
                 <tr>
@@ -206,6 +212,51 @@ export default function PublicPortfolioPage() {
                 ))}
               </tbody>
             </table>
+
+            <div className="holdings-cards-mobile" aria-label="Portfolio holdings">
+              {sortedHoldings.map(h => (
+                <div key={h.ticker} className="holding-card">
+                  <div className="holding-card-header">
+                    <div>
+                      <strong className="holding-card-ticker">{h.ticker}</strong>
+                      <span className="holding-card-company">{h.companyName}</span>
+                    </div>
+                    <span className={`holding-card-return ${getValueClass(h.cumulativeReturn)}`}>{formatPercent(h.cumulativeReturn)}</span>
+                  </div>
+                  <div className="holding-card-body">
+                    <div className="holding-card-row">
+                      <span className="holding-card-label">Sector</span>
+                      <span>{h.sector || '--'}</span>
+                    </div>
+                    <div className="holding-card-row">
+                      <span className="holding-card-label">Weight</span>
+                      <span>{h.weight.toFixed(1)}%</span>
+                    </div>
+                    <div className="holding-card-row">
+                      <span className="holding-card-label">Avg Price</span>
+                      <span>{formatCurrency(h.averagePrice)}</span>
+                    </div>
+                    <div className="holding-card-row">
+                      <span className="holding-card-label">Current</span>
+                      <span>{formatCurrency(h.currentPrice)}</span>
+                    </div>
+                    <div className="holding-card-row">
+                      <span className="holding-card-label">Peak</span>
+                      <span>{h.peakPrice != null ? formatCurrency(h.peakPrice) : '--'}</span>
+                    </div>
+                    <div className="holding-card-row">
+                      <span className="holding-card-label">First Buy</span>
+                      <span>{h.firstBuyDate ? new Date(h.firstBuyDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '--'}</span>
+                    </div>
+                    <div className="holding-card-row">
+                      <span className="holding-card-label">Last Buy</span>
+                      <span>{h.lastBuyDate ? new Date(h.lastBuyDate + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '--'}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            </>
               );
             })()}
           </div>
