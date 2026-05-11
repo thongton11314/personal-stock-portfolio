@@ -1,0 +1,11 @@
+{
+  "ticker": "CRWV",
+  "type": "buy",
+  "quantity": 30,
+  "price": 117.43,
+  "date": "2026-04-20",
+  "totalCost": 3522.9,
+  "notes": "",
+  "id": "crwv-buy-1778518369168",
+  "createdAt": "2026-05-11T16:52:49.168Z"
+}

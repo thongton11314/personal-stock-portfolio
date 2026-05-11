@@ -3,7 +3,7 @@
   "ticker": "NBIS",
   "companyName": "NBIS",
   "assetType": "Stock",
-  "quantity": 76,
+  "quantity": 60,
   "averageCost": 95.91,
   "purchaseDate": "2025-11-28",
   "sector": "Technology",
@@ -12,5 +12,5 @@
   "displayOrder": 0,
   "status": "active",
   "createdAt": "2026-04-15T02:34:11.839Z",
-  "updatedAt": "2026-04-15T02:35:26.946Z"
+  "updatedAt": "2026-05-11T16:56:14.702Z"
 }

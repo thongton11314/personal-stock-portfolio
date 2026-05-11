@@ -3,8 +3,8 @@
   "ticker": "CRWV",
   "companyName": "CoreWeave, Inc. Class A Common Stock",
   "assetType": "Stock",
-  "quantity": 195,
-  "averageCost": 102,
+  "quantity": 400,
+  "averageCost": 109.09,
   "purchaseDate": "2026-04-10",
   "sector": "Technology",
   "notes": "",
@@ -12,5 +12,5 @@
   "displayOrder": 0,
   "status": "active",
   "createdAt": "2026-04-15T03:27:59.092Z",
-  "updatedAt": "2026-04-15T03:27:59.092Z"
+  "updatedAt": "2026-05-11T16:53:42.658Z"
 }

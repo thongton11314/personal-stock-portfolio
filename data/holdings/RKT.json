@@ -3,7 +3,7 @@
   "ticker": "RKT",
   "companyName": "Rocket Companies Inc",
   "assetType": "Stock",
-  "quantity": 1300,
+  "quantity": 1100,
   "averageCost": 7.56,
   "purchaseDate": "2024-04-10",
   "sector": "Finance",
@@ -12,5 +12,5 @@
   "displayOrder": 0,
   "status": "active",
   "createdAt": "2026-04-15T02:58:02.023Z",
-  "updatedAt": "2026-04-15T02:59:19.240Z"
+  "updatedAt": "2026-05-11T16:56:24.553Z"
 }

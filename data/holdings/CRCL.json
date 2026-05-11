@@ -3,7 +3,7 @@
   "ticker": "CRCL",
   "companyName": "Circle Internet Group, Inc.",
   "assetType": "Stock",
-  "quantity": 455,
+  "quantity": 400,
   "averageCost": 56.27,
   "purchaseDate": "2026-02-04",
   "sector": "Finance",
@@ -12,5 +12,5 @@
   "displayOrder": 0,
   "status": "active",
   "createdAt": "2026-04-15T02:38:22.946Z",
-  "updatedAt": "2026-04-15T03:24:14.393Z"
+  "updatedAt": "2026-05-11T16:55:11.768Z"
 }

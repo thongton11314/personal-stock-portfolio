@@ -3,7 +3,7 @@
   "ticker": "HOOD",
   "companyName": "Robinhood Markets Inc",
   "assetType": "Stock",
-  "quantity": 350,
+  "quantity": 325,
   "averageCost": 8.81,
   "purchaseDate": "2023-07-02",
   "sector": "Finance",
@@ -12,5 +12,5 @@
   "displayOrder": 0,
   "status": "active",
   "createdAt": "2026-04-15T03:17:50.723Z",
-  "updatedAt": "2026-04-15T03:21:04.484Z"
+  "updatedAt": "2026-05-11T16:56:04.450Z"
 }
