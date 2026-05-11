@@ -1,0 +1,16 @@
+{
+  "id": "apld-1778519119418",
+  "ticker": "APLD",
+  "companyName": "Applied Digital Corporation",
+  "assetType": "Stock",
+  "quantity": 65,
+  "averageCost": 44.24,
+  "purchaseDate": "2026-05-06",
+  "sector": "Technology",
+  "notes": "",
+  "isPublic": true,
+  "displayOrder": 0,
+  "status": "active",
+  "createdAt": "2026-05-11T17:05:19.415Z",
+  "updatedAt": "2026-05-11T17:05:19.415Z"
+}
